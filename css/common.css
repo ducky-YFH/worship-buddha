@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  font-size: 20px;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar-left {
+  align-items: center;
+  display: flex;
+  font-size: 28px;
+  color: #343434;
+}
+.navbar-left .logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+.navbar-right {
+  display: flex;
+}
+.navbar-right > * {
+  margin: 0 20px;
+}
+.navbar-active {
+  color: #46d39a !important;
+}/*# sourceMappingURL=common.css.map */

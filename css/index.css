@@ -1,0 +1,73 @@
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  /* 超出body的都隐藏滚动条 */
+  overflow: hidden;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg-1.png") no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  animation: anim 25s linear infinite;
+  z-index: -1;
+}
+
+@keyframes anim {
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container {
+  /* 上下左右居中 */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.container-text > * {
+  margin: 30px 0;
+}
+
+.container-text-a {
+  color: #ff7979;
+  font-size: 50px;
+}
+
+.container-text-b {
+  font-size: 20px;
+}
+
+.container-button > button {
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: 0.4s linear;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.container-button > button:hover {
+  color: #ff7979;
+  background: #fff;
+}
